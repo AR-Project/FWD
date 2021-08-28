@@ -7,57 +7,85 @@
 
 <body>
 <div class="navbar">
+  
     <ul class="navbar-container">
-        <li class="navbar-menu"><a href="#">HOME</a></li>
-        <li class="navbar-menu"><a href="#">PRODUCT</a></li>
-        <li class="navbar-menu"><a href="#">GALLERY</a></li>
-        <li class="navbar-menu"><a href="#">BLOG</a></li>
-        <li class="navbar-menu"><a href="#">INVENTORY</a></li>
+        <li class="navbar-menu"><a href="#">Home</a></li>
+        <li class="navbar-menu"><a href="#">About</a></li>
+        <li class="navbar-menu"><a href="#">Portofolio</a></li>
+        <li class="navbar-menu"><a href="#">Blog</a></li>
+        <li class="navbar-menu"><a href="#">Team</a></li>
+        <li class="navbar-menu"><a href="#">Contact</a></li>
     </ul>
 </div>
 
 <div class="main">
-    <div class="section">
-
-        <div class="picture">
-            <img style="width: 150px;" src="logo.webp" alt="Profile Picture">
+    <div class="section" id="home">
+        <div class="content">
+            <h1 class="border">Welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor aliquam lacus a imperdiet. Maecenas iaculis, augue aliquet vulputate vehicula, dolor velit posuere orci, a dictum eros purus in mi. Morbi iaculis eros consequat, placerat sapien bibendum, malesuada nisl. Duis eget nulla vel lacus dapibus porta. Morbi consectetur erat in ipsum pellentesque vestibulum. Vivamus leo est, euismod et ligula ut, imperdiet gravida est. </p>
         </div>
+        
 
-        <div class="name">
-            <div class="name-main">Antonius Alven R</div>
-            <div class="name-title">Front End Designer</div>
-            <div class="button-container">
-                <div class="button highlight"> Edit</div>
-                <div class="button normal"> Resume</div>
-            </div>
-        </div>
-
-        <div class="profile">
-            <div class="container">
-                <div class="label">Availability</div>
-                <div class="value">Full TIme</div>
-            </div>
-            <div class="container">
-                <div class="label">Usia</div>
-                <div class="value">30</div>
-            </div>
-            <div class="container">
-                <div class="label">Lokasi</div>
-                <div class="value">Semarang</div>
-            </div>                    
-            <div class="container">
-                <div class="label">Pengalaman</div>
-                <div class="value">2</div>
-            </div>                   
-            <div class="container">
-                <div class="label">Email</div>
-                <div class="value">alvenresta[at]gmail.com</div>
-            </div>
-        </div>    
     </div>
 
-    <div class="form_input">
-        <form>
+
+    <div class="section" id="about">
+
+        <div class="content">
+            <div class="picture">
+                <img class="" style="width: 150px;" src="logo.webp" alt="Profile Picture">
+            </div>
+    
+            <div class="name">
+                <div class="name-main">About Me</div>
+                <div class="name-title">Hai, perkenalkan saya Alven. Saya adalah seorang calon Front End Developer yang sedang mengikuti kelas Fundamental untuk menjadi Web Programmer dari Hacktiv8. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, inventore quos laudantium dicta rerum, dolorem eveniet animi odio molestiae placeat deserunt, qui velit voluptas id quae at consequatur ullam nostrum possimus? Quidem atque ipsum blanditiis non at consequatur suscipit aliquam? </div>
+            </div>
+
+        </div>
+
+
+
+        
+    </div>    
+
+    <div class="section" id="portofolio">
+
+        <div class="subtitle">
+            <h1>
+                Portofolio
+
+            </h1>
+        </div>
+        <div class="content">
+            
+            <img src="img\pt_01.jpg" alt="">
+            <img src="img\pt_02.jpg" alt="">
+            <img src="img\pt_03.jpg" alt="">
+            <img src="img\pt_04.jpg" alt="">
+            <img src="img\pt_05.jpg" alt="">
+            <img src="img\pt_06.jpg" alt="">
+            <img src="img\pt_07.jpg" alt="">
+            <img src="img\pt_08.jpg" alt="">
+            <img src="img\pt_09.jpg" alt="">
+        </div>
+      
+    </div>
+
+    <div class="section" id="blog">
+        <h1 class="subtitle">Blog</h1>
+        TODO BLOG
+    </div>
+
+    <div class="section" id="team">
+        <h1 class="subtitle">Our Team</h1>
+        TODO Team Section
+    </div>
+
+
+
+    <div class="section" id="contact">
+        <h1 class="subtitle" >Contact Us</h1>
+        <form >
             <div class="set">
                 <label  for="nama">Nama</label>
                 <input type="text" name="nama" placeholder="Masukkan Nama Anda">
@@ -91,6 +119,14 @@
             </div>
         </form>
     </div>
+
+
+
+</div>
+
+
+
+    
 </div>
 </body>
 </html>
