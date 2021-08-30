@@ -1,70 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portofolio</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
 <div class="navbar">
-  
-    <ul class="navbar-container">
-        <li class="navbar-menu"><a href="#">Home</a></li>
-        <li class="navbar-menu"><a href="#">About</a></li>
-        <li class="navbar-menu"><a href="#">Portofolio</a></li>
-        <li class="navbar-menu"><a href="#">Blog</a></li>
-        <li class="navbar-menu"><a href="#">Team</a></li>
-        <li class="navbar-menu"><a href="#">Contact</a></li>
+      <ul class="navbar-container">
+        <li class="navbar-menu"><a href="#home">Home</a></li>
+        <li class="navbar-menu"><a href="#about">About</a></li>
+        <li class="navbar-menu"><a href="#portofolio">Portofolio</a></li>
+        <li class="navbar-menu"><a href="#blog">Blog</a></li>
+        <li class="navbar-menu"><a href="#team">Team</a></li>
+        <li class="navbar-menu"><a href="#contact">Contact</a></li>
     </ul>
 </div>
 
 <div class="main">
+    <!-- START OF main content  -->
     <div class="section" id="home">
         <div class="content">
             <h1>Welcome</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor aliquam lacus a imperdiet. Maecenas iaculis, augue aliquet vulputate vehicula, dolor velit posuere orci, a dictum eros purus in mi. Morbi iaculis eros consequat, placerat sapien bibendum, malesuada nisl. Duis eget nulla vel lacus dapibus porta. Morbi consectetur erat in ipsum pellentesque vestibulum. Vivamus leo est, euismod et ligula ut, imperdiet gravida est. </p>
         </div>
-        
-
     </div>
 
-
     <div class="section" id="about">
-        <div class="limiter ">
+        <div class="limiter" id="about-link">
             <div class="content " >
-
                 <div class="picture ">
                     <img src="img/profile_01.svg" alt="Profile Picture">
                 </div>
-        
                 <div class="text ">
                     <article>
                         <h1>About Me</h1>
                         <p>Hai, perkenalkan saya Alven. Saya adalah seorang calon Front End Developer yang sedang mengikuti kelas Fundamental untuk menjadi Web Programmer dari Hacktiv8. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, inventore quos laudantium dicta rerum, dolorem eveniet animi odio molestiae placeat deserunt, qui velit voluptas id quae at consequatur ullam nostrum possimus? Quidem atque ipsum blanditiis non at consequatur suscipit aliquam?</p>
-
                     </article>
                 </div>
-
             </div>
-
-
-
         </div>
-
-
-
-        
     </div>    
 
     <div class="section" id="portofolio">
-
-        <div class="limiter">
+        <div class="limiter" id="portofolio-link">
             <div class="subtitle">
-                <h1>
-                    Portofolio
-    
-                </h1>
+                <h1>Portofolio</h1>
             </div>
+            <div class="main-sep"></div>
             <div class="content">
                 <img src="img\pt_01.jpg" alt="">
                 <img src="img\pt_02.jpg" alt="">
@@ -77,9 +62,6 @@
                 <img src="img\pt_09.jpg" alt="">
             </div>
         </div>
-
-
-      
     </div>
 
     <div class="section " id="blog">
@@ -87,36 +69,42 @@
             <div class="blog-subtitle">
                 <h1>Blog</h1>
             </div>
+            <div class="main-sep"></div>
             <div class="blog-wrapper ">
-                <article class="blog-item ">
-                    <img src="img\blog_ 01.jpg" alt="">
-                    <h1>Pelestarian Budaya Masa Kini</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, harum neque natus tempore eaque adipisci.</p>
+                <div class="frame">
+                    <article class="blog-item ">
+                        <img src="img\blog_ 01.jpg" alt="">
+                        <h1>Pelestarian Budaya Masa Kini</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, harum neque natus tempore eaque adipisci.</p>
+                    </article>
                     <button> Read more</button>
-                </article>
-                <article class="blog-item ">
-                    <img src="img\blog_ 02.jpg" alt="">
-                    <h1>Tips Desain Web untuk Kantor</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi illo magni veniam assumenda distinctio.</p>
+                </div>
+                <div class="frame">
+                    <article class="blog-item ">
+                        <img src="img\blog_ 02.jpg" alt="">
+                        <h1>Tips Desain Web untuk Kantor</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi illo magni veniam assumenda distinctio.</p>
+                    </article>  
                     <button> Read more</button>
-                </article>
-                <article class="blog-item ">
-                    <img src="img\blog_ 03.jpg" alt="">
-                    <h1>Optimisasi Blog Era Modern</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error dolorem excepturi.</p>
+                </div>
+                <div class="frame">
+                    <article class="blog-item ">
+                        <img src="img\blog_ 03.jpg" alt="">
+                        <h1>Optimisasi Blog Era Modern</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error dolorem excepturi.</p>
+                    </article>
                     <button> Read more</button>
-                </article>
-                <article class="blog-item ">
-                    <img src="img\blog_ 03.jpg" alt="">
-                    <h1>Optimisasi Blog Era Modern</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error dolorem excepturi.</p>
-                    <button> Read more</button>
-                </article>
-
+                </div>
+                <div class="frame">
+                    <article class="blog-item ">
+                        <img src="img\blog_ 03.jpg" alt="">
+                        <h1>Optimisasi Blog Era Modern</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error dolorem excepturi.</p>
+                    </article>   
+                    <button> Read more</button>             
+                </div>
             </div>
         </div>
-
-
     </div>
 
     <div class="section" id="team">
@@ -124,6 +112,7 @@
             <div class="team-subtitle">
                 <h1>Our Team</h1>
             </div>
+            <div class="main-sep"></div>
             <div class="team-wrapper">
                 <article class="team-item">
                     <img src="img/profile_02.svg" alt="">
@@ -158,57 +147,40 @@
                     </div>
                  </article>
             </div>
-
         </div>
-
     </div>
-
-
 
     <div class="section" id="contact">
-        <h1 class="subtitle" >Contact Us</h1>
-        <form >
-            <div class="set">
-                <label  for="nama">Nama</label>
-                <input type="text" name="nama" placeholder="Masukkan Nama Anda">
+        <div class="limiter">
+            <div class="subtitle "><h1>Contact Us</h1></div>
+            <div class="form-container ">
+                <form>
+                    <div class="set ">
+                        <input type="text" name="nama" placeholder="Nama Anda">
+                    </div>
+                    <div class="set">
+                        <input type="text" name="email" placeholder="E-mail" >
+                    </div>
+                    <div class="set ">
+                        <textarea name="" id="" rows="10" placeholder="Apa yang ingin anda sampaikan">
+                        </textarea>
+                    </div>
+                    <div class="set">
+                        <input class="button" type="submit" value="Send">
+                    </div>
+                </form>
             </div>
-            <div class="set">
-                <label for="role">Role</label>
-                <input type="text" name="role">
-            </div>
-            <div class="set">
-                <label for="availability">Availability</label>
-                <input type="text" name="availability" >
-            </div>
-            <div class="set">
-                <label for="usia">Usia</label>
-                <input type="number" name="usia" >
-            </div>
-            <div class="set">
-                <label for="lokasi">Lokasi</label>
-            <input type="text" name="lokasi" >
-            </div>
-            <div class="set">
-                <label for="yearsexp">Years Experience</label>
-                <input type="number" name="yearsexp" >
-            </div>
-            <div class="set">
-                <label for="email">E-mail</label>
-                <input type="text" name="email" >
-            </div>
-            <div class="set">
-                <input class="green" type="submit" value="SUBMIT">
-            </div>
-        </form>
+        </div>
     </div>
-
-
-
+    <!-- END OF main content -->
 </div>
 
-
-
-    
+<div class="" id="footer">
+    <div class="footer-text">
+        <p>Copyright © Antonius Alven R - 2021 - FWD Prakerja Class by Hacktiv8</p>
+        <!-- capek bikinnya bang, 3 hari kerja abis dah weekend-->
+    </div>
 </div>
 </body>
 </html>
+
