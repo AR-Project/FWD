@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:wght@400;700&display=swap');
 
+*{
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
 body {
     display: block;
     
@@ -10,9 +15,9 @@ body {
 
 /* for debuging  */
 .border{
-    border-style: solid;
-    border-width: 1px;
-    border-color: grey;
+    border-style: inset;
+    border-width: 2px;
+    border-color: rgb(245, 0, 0);
 }
 
 p {
@@ -30,7 +35,7 @@ h1{
 }
 
 .horizontal, .main-sep{
-    box-sizing: content-box;
+
     background-color: rgb(47, 79, 138);
 }
 
@@ -60,6 +65,12 @@ h1{
     z-index: 999;
 }
 
+@media only screen and (max-width: 600px){
+    .navbar{
+        position: sticky;
+    }
+}
+
 ul{
     padding: 0px;
     margin: 0px;
@@ -81,6 +92,14 @@ ul{
     text-decoration: none;
     color: rgb(90, 90, 90);
     font-weight: bold;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar-menu a{
+    width: 3rem;
+    font-size: 0.75em;
+    margin: 0 0.25rem;
+    }
 }
 
 .navbar-menu{
@@ -112,13 +131,22 @@ ul{
     margin: 2em 2em;
 }
 
+@media only screen and (max-width: 600px){
+    .section{
+        margin: 1.6rem 0.4rem;
+        padding: 4rem 1rem;
+    }
+}
+
 /* #################### home Section ####################### */
 /* ######################################################## */
 
 #home{
     display: flex;
     padding: 10%;
+    margin: 0;
     min-height: 50vh;
+    height: 95vh;
     justify-content: center;
     align-items: center;
     background-image: url("img/home_bg.jpg");
@@ -126,10 +154,29 @@ ul{
     background-size: cover;
 }
 
+@media only screen and (max-width: 600px){
+    #home{
+    /* width: 100%; */
+    font-size: 1rem;
+    height: 90vh;
+    /* margin: 0 0.25rem; */
+    padding: 20px 0;
+    border-radius: 0;
+    }
+}
+
 #home .content{
     background-color: rgba(255, 255, 255, 0.85);
     padding: 50px 100px;
     border-radius: 6px;
+}
+
+@media only screen and (max-width: 600px){
+    #home .content{
+        padding: 20px;
+        margin: 0;
+        border-radius: 0px;
+    }
 }
 
 #home h1{
@@ -156,6 +203,13 @@ p{
     padding: 0 50px;
 }
 
+@media only screen and (max-width: 600px){
+    #about .limiter{
+        /* max-width: 1000px; */
+        padding: 0 0px;
+    }
+}
+
 #about .content{
     display: flex;
     flex-wrap: wrap;
@@ -170,6 +224,12 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+    #about .picture{    
+        min-width: none;
+    }
 }
   
 #about img{
@@ -186,6 +246,12 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+    #about .text{    
+        min-width: none;
+    }
 }
 
 #about h1{
@@ -229,41 +295,6 @@ p{
 /* ################# portofolio Section ######################## */
 /* ############################################################# */
 
-
-#portofolio{
-    margin: 2em 0;
-    border-radius: 0;
-    background-color: white;
-    padding-bottom: 5em;
-}
-
-#portofolio > .limiter{
-    max-width: 1500px;
-    margin: 0 auto;
-
-}
-
-#portofolio .subtitle{
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    margin-top: -30px;
-    margin-bottom: 50px;
-}
-
-#portofolio .content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 2rem;
-}
-
-#portofolio  img{
-    box-sizing: border-box;
-    padding: 15px;
-    max-width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-} */
-
 #portofolio{
     display: block;
 }
@@ -287,6 +318,13 @@ p{
     grid-gap: 2rem;
 }
 
+@media only screen and (max-width: 600px){
+    #portofolio .content{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap:0.5rem
+    }
+}
+
 #portofolio  img{
     justify-self: center;
     object-fit: cover;
@@ -297,6 +335,19 @@ p{
     height: 100%;
     transition: .2s;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+@media only screen and (max-width: 600px){
+    #portofolio  img{
+        box-shadow: none;
+        border: 1px solid lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding: 2px;
+    }
+    #portofolio img:hover{
+        transform: scale(1.1); 
+    }
 }
 
 #portofolio img:hover{
@@ -335,6 +386,18 @@ p{
     grid-gap: 2rem;
 }
 
+@media only screen and (max-width: 600px){
+    .blog-wrapper{
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    }
+}
+
+.blog-wrapper .frame{
+    display: block;
+    box-sizing: content-box;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
 .blog-item{
     box-sizing: border-box;
     padding: 15px;
@@ -354,8 +417,9 @@ p{
 
 .blog-wrapper  button{
     margin-top: auto;
+    box-sizing: border-box;
     width: 100%;
-    height: 4em;
+    height: 4rem;
     color: rgb(0, 60, 128);
     font-family: 'Poppins', sans-serif;
     border-radius: 0px 0px 5px 5px;
@@ -374,11 +438,6 @@ p{
     background-color: white;
 }
 
-.blog-wrapper .frame{
-    display: block;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-
-}
 
 /* ########################## Team Section ##################################### */
 /* ############################################################# */
@@ -400,6 +459,13 @@ p{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 2rem;
+}
+
+@media only screen and (max-width: 600px){
+    .team-wrapper{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 0.5rem;
+    }
 }
 
 .team-item{
@@ -449,6 +515,12 @@ p{
     flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 600px){
+    #contact .limiter{
+        padding: 0;
+    }
+}
+
 #contact .subtitle{
     text-align: center;
     flex-grow: 2;
@@ -462,8 +534,14 @@ p{
     flex-grow: 3;
     flex-basis: 0;
     padding: 0 50px;
-    min-width: 300px;
     display: block;
+}
+
+@media only screen and (max-width: 600px){
+    .form-container{
+        padding: 0;
+        min-width: none;
+    }
 }
 
 #contact input, textarea{
